@@ -1,0 +1,60 @@
+$color1: #111;
+$color2: #aaa;
+$color3: #0ff;
+
+body {
+    background-color: $color1;
+}
+
+._main {
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0% 3%;
+
+    ._view {
+        width: 100%;
+
+        ._row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            ._dot-wrapper {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                &::before {
+                    display: block;
+                    content: '';
+                    padding-bottom: 100%;
+                }
+
+                ._dot-reset {
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 13%;
+
+                    ._dot {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba($color: $color2, $alpha: 0.1);
+                        border-radius: 50%;
+                    }
+
+                    ._on {
+                        background-color: $color3;
+                        box-shadow: $color3 0px 0px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
