@@ -1,0 +1,67 @@
+body {
+  background-color: #111;
+}
+
+._main {
+  max-width: 1000px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0% 3%;
+}
+
+._main ._view {
+  width: 100%;
+}
+
+._main ._view ._row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+._main ._view ._row ._dot-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+._main ._view ._row ._dot-wrapper::before {
+  display: block;
+  content: '';
+  padding-bottom: 100%;
+}
+
+._main ._view ._row ._dot-wrapper ._dot-reset {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 13%;
+}
+
+._main ._view ._row ._dot-wrapper ._dot-reset ._dot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(170, 170, 170, 0.1);
+  border-radius: 50%;
+}
+
+._main ._view ._row ._dot-wrapper ._dot-reset ._on {
+  background-color: #0ff;
+  -webkit-box-shadow: #0ff 0px 0px 30px;
+          box-shadow: #0ff 0px 0px 30px;
+}
+/*# sourceMappingURL=main.css.map */
